@@ -1,0 +1,50 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: "Open Sans", sans-serif; color:#333; background:#f9f9f9; }
+
+/* HEADER */
+.header { background:#004080; padding:1rem 2rem; position:sticky; top:0; z-index:1000; }
+.nav { display:flex; justify-content:space-between; align-items:center; }
+.logo { color:white; }
+.nav-menu { display:flex; gap:1.5rem; list-style:none; }
+.nav-menu a { color:white; text-decoration:none; font-weight:600; }
+.nav-menu a:hover { color:#ffd700; }
+.menu-btn { display:none; font-size:2rem; color:white; cursor:pointer; }
+
+/* HERO */
+.hero { text-align:center; padding:5rem 2rem; background:linear-gradient(135deg,#004080,#0077b6); color:white; }
+.hero h1 span { color:#ffd700; }
+.hero .btn { margin-top:1rem; display:inline-block; padding:0.8rem 1.5rem; background:#ffd700; color:#004080; border-radius:6px; text-decoration:none; font-weight:600; }
+.hero .btn:hover { background:#ffcc00; }
+
+/* SOBRE MÍ */
+.sobre-mi { display:flex; align-items:center; justify-content:center; gap:2rem; padding:3rem 2rem; }
+.sobre-mi img { width:150px; border-radius:50%; }
+.sobre-mi div { max-width:600px; }
+
+/* PROYECTOS */
+.proyectos { padding:3rem 2rem; text-align:center; }
+.grid-proyectos { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-top:2rem; }
+.proyecto { background:white; padding:1rem; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:0.3s; }
+.proyecto:hover { transform:translateY(-5px); }
+.proyecto img { width:100%; border-radius:8px; }
+
+/* HABILIDADES */
+.habilidades { padding:3rem 2rem; text-align:center; background:#eef5ff; }
+.hex-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; }
+.hex { width:100px; height:115px; background:#004080; color:white; display:flex; flex-direction:column; align-items:center; justify-content:center; clip-path:polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+.hex p { margin-top:5px; font-size:14px; }
+
+/* CONTACTO */
+.contacto { padding:3rem 2rem; text-align:center; }
+.contacto a { color:#004080; font-weight:600; }
+
+/* FOOTER */
+.footer { background:#222; color:white; text-align:center; padding:1rem; }
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav-menu { display:none; flex-direction:column; background:#004080; position:absolute; top:60px; right:0; width:200px; padding:1rem; }
+  .nav-menu.show { display:flex; }
+  .menu-btn { display:block; }
+  .sobre-mi { flex-direction:column; }
+}
