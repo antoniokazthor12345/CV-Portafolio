@@ -1,4 +1,5 @@
-![Portfolio Preview](./proto2026.png)
+![Portfolio Preview](./preview.png)
+
 # Antonio Castor Silva 👨‍💻
 
 ## Frontend Developer Jr | Web Developer
